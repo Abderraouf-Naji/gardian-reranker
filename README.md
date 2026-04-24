@@ -68,16 +68,3 @@ gardian-rerank \
   --output output.json
 ```
 
-## PyPI release (maintainers)
-
-1. Replace placeholder repository URLs in `pyproject.toml`.
-2. Configure [Trusted Publishing](https://docs.pypi.org/trusted-publishers/) for your PyPI project.
-3. Bump `version` in `pyproject.toml`.
-4. Push a tag, e.g. `v0.1.1`:
-
-```bash
-git tag v0.1.1
-git push origin v0.1.1
-```
-
-The GitHub Action `.github/workflows/publish-pypi.yml` will build and publish automatically.
